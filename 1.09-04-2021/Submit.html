@@ -1,0 +1,29 @@
+<!-- Title:Submit -->
+<!-- Description:To explore difrent addEventListener events -->
+<!-- Author:Kshithija@1NT18IS084 -->
+<!-- Date:09-04-2021 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <title>document</title>
+        
+    </head>
+    <body>
+        <h1>Kshithija</h1>
+        <h3>dept</h3>
+        
+
+        <input type="text" id="fname" placeholder="enter your name" name="fname">
+        <input type="text" id="lname" placeholder="enter your name" name="lname"><br><br>
+        <input type="text" id="email" placeholder="enter your mail" name="email"><br><br>
+        <input type="submit" id="submit" value="submit">
+    </body>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("submit").addEventListener("click",function(){
+            document.getElementById("demo").innerHTML = document.getElementById("fname").value + document.getElementById("lname").value
+        });
+    </script>
+</html>
