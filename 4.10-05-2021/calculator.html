@@ -1,0 +1,36 @@
+<!-- Title:To build a calculator -->
+<!-- Description:To calculate two numbers using various operator with if else statement -->
+<!-- Author:Kshithija@1NT18IS084 -->
+<!-- Date:10-05-2021 -->
+
+<doctype html>
+<html>
+    <head>
+        <script>
+
+const operator = prompt('Enter operator: ');
+
+
+const num1 = parseFloat(prompt('Enter first number: '));
+const num2 = parseFloat(prompt('Enter second number: '));
+
+let res;
+
+// using if...else if... else
+if (operator == '+') {
+    res = num1 + num2;
+}
+else if (operator == '-') {
+    res = num1 - num2;
+}
+else if (operator == '*') {
+    res = num1 * num2;
+}
+else {
+    res = num1 / num2;
+}
+
+console.log(`${num1} ${operator} ${num2} = ${res}`);
+</script>
+</head>
+    </html>
