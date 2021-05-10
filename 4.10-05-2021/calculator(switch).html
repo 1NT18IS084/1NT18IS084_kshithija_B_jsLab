@@ -1,0 +1,48 @@
+<!-- Title:To build a calculator -->
+<!-- Description:To calculate two operstor using different operator -->
+<!-- Author:Kshithija@1NT18IS084 -->
+<!-- Date:10-05-2021 -->
+
+<doctype html>
+<html>
+    <head>
+        <script>
+
+
+let res;
+
+
+const operator = prompt('Enter operator: ');
+
+
+const num1 = parseFloat(prompt('Enter first number: '));
+const num2 = parseFloat(prompt('Enter second number: '));
+
+switch(operator) {
+    case '+':
+         res = num1 + num2;
+        console.log(`${num1} + ${num2} = ${res}`);
+        break;
+
+    case '-':
+         res = num1 - num2;
+        console.log(`${num1} - ${num2} = ${res}`);
+        break;
+
+    case '*':
+         res = num1 * num2;
+        console.log(`${num1} * ${num2} = ${res}`);
+        break;
+
+    case '/':
+         res = num1 / num2;
+        console.log(`${num1} / ${num2} = ${res}`);
+        break;
+
+    default:
+        console.log('Invalid operator');
+        break;
+}
+</script>
+</head>
+    </html>
